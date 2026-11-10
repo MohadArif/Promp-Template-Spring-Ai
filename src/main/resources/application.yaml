@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: prompt-template
+
+
+  ai:
+    openai:
+      api-key: ${API_KEY}
+      base-url: https://openrouter.ai/api/v1
+      timeout: 30s
+      chat:
+        options:
+          model: nvidia/nemotron-3-ultra-550b-a55b:free
+          temperature: 0.7
+          max-tokens: 1000
+        enabled: false
