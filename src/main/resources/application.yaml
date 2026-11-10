@@ -14,3 +14,13 @@ spring:
           temperature: 0.7
           max-tokens: 1000
         enabled: false
+
+#THIS IS FOR LOGGING ADVISOR LOGGING ENABLED
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
